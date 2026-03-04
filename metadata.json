@@ -1,0 +1,5 @@
+{
+  "name": "MemoFlash",
+  "description": "A notepad-style flashcard app with AI auto-complete and long-press reveal functionality.",
+  "requestFramePermissions": []
+}

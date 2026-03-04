@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+:root {
+  --ios-bg: #F2F2F7;
+  --ios-blue: #007AFF;
+  --ios-separator: #C6C6C8;
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #F2F2F7; /* Standard iOS background */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar within the phone app */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+input, textarea {
+  user-select: text;
+}
+
+.segment-transition {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
